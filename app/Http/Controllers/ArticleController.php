@@ -13,9 +13,10 @@ class ArticleController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(): Article
+    public function index()
     {
-        return Article::all();
+        $ars = Article::all();
+        return view('articles.articles', compact('ars'));
     }
 
     /**
@@ -47,9 +48,10 @@ class ArticleController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Article $article)
+    public function show($id)
     {
-        //
+        $ar = Article::find($id);
+        return view("articles.articles-detail", compact("ar"));
     }
 
     /**

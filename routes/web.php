@@ -4,9 +4,12 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/budayaku', function () {
+    return view('articles.index');
+})->name('budayaku.homepage');
+
+Route::get('/budayaku/articles', [ArticleController::class, 'index'])->name('budayaku.articles');
+Route::get('/budayaku/articles/{id}', [ArticleController::class, 'show'])->name('budayaku.article-detail');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

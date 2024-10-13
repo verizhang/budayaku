@@ -1,0 +1,123 @@
+body {
+    font-family: 'Poppins';
+    margin: 40px 50px 0px 50px;
+    background-color: black;
+    color: white;
+}
+.logo {
+    font-size: 30px;
+    float: left;
+}
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+.menu {
+    float: right;
+}
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.3px;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ab434a;
+    font-weight: bold;
+}
+.sectionMenu {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 50px;
+}
+.sectionArtikel {
+    margin-top: 50px;
+}
+.deskripsi .title {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+.btn-mulai {
+    background-color: #ab434a;
+    color: white;
+    border-radius: 30px;
+    width: 170px;
+    height: 53px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.konten-artikel {
+    display: flex;
+}
+.konten-artikel-2 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+}
+.konten-artikelutama{
+    display: flex;
+    flex-direction: column;
+}
+.btn-read {
+    background-color: #ab434a;
+    border-radius: 30px;
+    color: white;
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 200px;
+    height: 40px;
+}
+.img-artikel {
+    width: 654px;
+    height: 447px;
+}
+.img-artikelutama{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.konten-footer {
+    height: 262px;
+    display: flex;
+}
+.title-konten {
+    padding-left: 62px;
+    font-size: 35px;
+}
+.deskripsi-konten {
+    font-size: 20px;
+    padding-left: 62px;
+}
+.deskripsi-konten-utama{
+    font-size: 20px;
+    padding-left: 62px;
+    text-align: justify;
+}
+.icon-sosmed {
+    width: 35px;
+    height: 35px;
+    padding-left: 17px;
+}
